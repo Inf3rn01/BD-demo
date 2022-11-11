@@ -7,7 +7,7 @@ drop table if exists Gangs;
 
 CREATE TABLE Event(
   id_events serial PRIMARY KEY,
-  name varchar (256) not null,
+  title varchar (256) not null,
   data date
 );
   
@@ -42,7 +42,7 @@ CREATE TABLE Territory(
 
 CREATE TABLE Gangs(
   id_gangs_name serial PRIMARY KEY,
-  gangs_name varchar (256) not null,
+  gangs_title varchar (256) not null,
   district integer NOT NULL,
   foreign key (district) references Territory(id_district)
 );
