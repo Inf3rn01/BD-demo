@@ -1,8 +1,8 @@
-insert INTO Event (name, data)  values ("War", "2015-5-07");
-insert INTO Event (name, data)  values ("Rob", "2014-12-10");
-insert INTO Event (name, data)  values ("Party", "2014-14-10");
-insert INTO Event (name, data)  values ("Meetings", "2015-1-06");
-insert INTO Event (name, data)  values ("Theft", "2014-10-10");
+insert INTO Event (title, data)  values ("War", "2015-5-07");
+insert INTO Event (title, data)  values ("Rob", "2014-12-10");
+insert INTO Event (title, data)  values ("Party", "2014-14-10");
+insert INTO Event (title, data)  values ("Meetings", "2015-1-06");
+insert INTO Event (title, data)  values ("Theft", "2014-10-10");
 
 INSERT INTO Accounting (eventId, income, costs) VALUES (1, 153417, 245123);
 INSERT INTO Accounting (eventId, income, costs) VALUES (2, 459186, 278436);
@@ -37,7 +37,7 @@ INSERT INTO Territory (title) VALUES("Sumeru");
 INSERT INTO Territory (title) VALUES("Snowy");
 INSERT INTO Territory (title) VALUES("Inazuma");
 
-INSERT INTO Gangs (gangs_name, district) VALUES("Anteiku", 1);
-INSERT INTO Gangs (gangs_name, district) VALUES("Arasaka", 2);
-INSERT INTO Gangs (gangs_name, district) VALUES("Paradise", 3);
-INSERT INTO Gangs (gangs_name, district) VALUES("Akatsuki", 4);
+INSERT INTO Gangs (gangs_title, district) VALUES("Anteiku", 1);
+INSERT INTO Gangs (gangs_title, district) VALUES("Arasaka", 2);
+INSERT INTO Gangs (gangs_title, district) VALUES("Paradise", 3);
+INSERT INTO Gangs (gangs_title, district) VALUES("Akatsuki", 4);
