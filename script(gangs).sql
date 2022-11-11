@@ -12,7 +12,7 @@ CREATE TABLE Event(
 );
   
 CREATE TABLE Accounting(
-  id_accouting serial PRIMARY KEY,
+  id_accounting serial PRIMARY KEY,
   eventId integer NOT NULL,
   income integer NOT NULL,
   costs integer NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE Share(
   accountingId integer NOT NULL,
   memberId integer NOT NULL,
   part integer
-  foreign key (accountingId) references Accouting(id_accouting),
+  foreign key (accountingId) references Accounting(id_accounting),
   foreign key (memberId) references Gang_members(id_member)
 );
 
