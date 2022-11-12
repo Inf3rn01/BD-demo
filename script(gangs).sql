@@ -23,7 +23,7 @@ CREATE TABLE Share(
   id_share serial PRIMARY KEY,
   accountingId integer NOT NULL,
   memberId integer NOT NULL,
-  part integer
+  part integer,
   foreign key (accountingId) references Accounting(id_accounting),
   foreign key (memberId) references Gang_members(id_member)
 );
