@@ -21,7 +21,7 @@ CREATE TABLE Accounting(
   eventId integer NOT NULL,
   income integer NOT NULL,
   costs integer NOT NULL,
-  FOREIGN KEY (eventId) references Event(id_events)
+  FOREIGN KEY (eventId) references Event(id_events) on DELETE CASCADE
 );
 INSERT INTO Accounting (eventId, income, costs) VALUES (1, 153417, 245123);
 INSERT INTO Accounting (eventId, income, costs) VALUES (2, 459186, 278436);
@@ -34,8 +34,8 @@ CREATE TABLE Share(
   accountingId integer NOT NULL,
   memberId integer NOT NULL,
   part integer,
-  FOREIGN KEY (accountingId) references Accounting(id_accounting),
-  FOREIGN KEY (memberId) references Gang_members(id_member)
+  FOREIGN KEY (accountingId) references Accounting(id_accounting) on DELETE CASCADE,
+  FOREIGN KEY (memberId) references Gang_members(id_member) on DELETE CASCADE
 );
 INSERT INTO Share (accountingId, memberId, part) VALUES (1, 10, 30683);
 INSERT INTO Share (accountingId, memberId, part) VALUES (1, 5, 30683);
@@ -78,7 +78,7 @@ CREATE TABLE Gangs(
   id_gangs_name serial PRIMARY KEY,
   gangs_title varchar (256) not null,
   district integer NOT NULL,
-  FOREIGN KEY (district) references Territory(id_district)
+  FOREIGN KEY (district) references Territory(id_district) on UPDATE CASCADE
 );
 INSERT INTO Gangs (gangs_title, district) VALUES("Anteiku", 1);
 INSERT INTO Gangs (gangs_title, district) VALUES("Arasaka", 2);
