@@ -21,7 +21,7 @@ CREATE TABLE Accounting(
   eventId integer NOT NULL,
   income integer NOT NULL,
   costs integer NOT NULL,
-  FOREIGN KEY (eventId) references Event(id_events) on DELETE CASCADE
+  FOREIGN KEY (eventId) REFERENCES Event(id_events) ON DELETE CASCADE
 );
 INSERT INTO Accounting (eventId, income, costs) VALUES (1, 153417, 245123);
 INSERT INTO Accounting (eventId, income, costs) VALUES (2, 459186, 278436);
