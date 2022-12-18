@@ -1,1 +1,1 @@
-BASE_PATH = "BaseGangs.db"
+BASE_PATH = "sql_base/BaseGangs.db"
