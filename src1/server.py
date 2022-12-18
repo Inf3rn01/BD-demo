@@ -8,7 +8,7 @@ from setting import BASE_PATH
 base_gangs.set_base_path(BASE_PATH)
 
 if not base_gangs.check_base():
-    base_gangs.create_base('../sql/tables.sql')
+    base_gangs.create_base('../sql/banda.sql')
 
 # app = FastAPI()
 #

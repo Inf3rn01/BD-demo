@@ -1,6 +1,6 @@
 import sqlite3
 import os
-from settings import DB_PATH
+from setting import BASE_PATH
 
 
 class BaseWorker:
@@ -40,4 +40,4 @@ class BaseWorker:
         return res
 
 
-base_worker = BaseWorker(base_path=DB_PATH)
+base_worker = BaseWorker(base_path=BASE_PATH)
