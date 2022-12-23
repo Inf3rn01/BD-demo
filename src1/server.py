@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 # from routers.users import user_router
 # from routers.staff import staff_router
-from sql_base import base_gangs
+from base import base_gangs
 from setting import BASE_PATH
 
 

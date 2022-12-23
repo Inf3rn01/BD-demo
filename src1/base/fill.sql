@@ -49,3 +49,5 @@ INSERT INTO Gangs (gangs_title, district) VALUES("Anteiku", 1);
 INSERT INTO Gangs (gangs_title, district) VALUES("Arasaka", 2);
 INSERT INTO Gangs (gangs_title, district) VALUES("Paradise", 3);
 INSERT INTO Gangs (gangs_title, district) VALUES("Akatsuki", 4);
+
+INSERT INTO users (login, password) VALUES("log", "pas");
