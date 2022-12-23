@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from base.models import user
+from base.models import users
 from resolvers import check_login_1
 
 user_router = APIRouter()
@@ -11,7 +11,7 @@ def not_login():
 
 
 @user_router.get('/login')
-def check_login(user: User):
+def check_login(user: users):
     position_id = check_login_1(user)
     if position_id:
         return {"code": 200, "message": "Login correct", "position_id": position_id}

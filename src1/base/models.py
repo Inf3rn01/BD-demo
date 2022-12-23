@@ -34,3 +34,7 @@ class Territory(BaseModelModify):
 class Gangs(BaseModelModify):
     gangs_title: str
     district: int
+    
+class users(BaseModelModify):
+    login: str
+    password: str
