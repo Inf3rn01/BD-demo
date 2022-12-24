@@ -5,7 +5,7 @@ from setting import BASE_PATH
 
 class BaseWorker:
 
-    def __init__(self, base_path: str): #Функция, которая даёт возможность обращаться базе данных в любом месте
+    def __init__(self, base_path: str): #Функция, которая даёт возможность обращаться к базе данных в любом месте
         self.base_path = base_path
 
     def db_connect(self) -> tuple[sqlite3.Connection, sqlite3.Cursor]: #Функция подключения базы данных

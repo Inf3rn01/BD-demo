@@ -19,8 +19,8 @@ class Share(BaseModelModify):
     memberId: int
     part: int
     deleted: bool = False
-class Rank(BaseModelModify):
-    rank: Optional[int]
+class Ranks(BaseModelModify):
+    ranks: Optional[int]
 
 class Gang_members(BaseModelModify):
     name: str

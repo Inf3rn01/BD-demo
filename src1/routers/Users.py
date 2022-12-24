@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from base.models import users
-from resolvers import check_login_1
+#from resolvers import
 
 user_router = APIRouter()
 
