@@ -50,4 +50,13 @@ INSERT INTO Gangs (gangs_title, district) VALUES("Arasaka", 2);
 INSERT INTO Gangs (gangs_title, district) VALUES("Paradise", 3);
 INSERT INTO Gangs (gangs_title, district) VALUES("Akatsuki", 4);
 
-INSERT INTO users (login, password) VALUES("log", "pas");
+INSERT INTO users (login, password,ranksID) VALUES("log", "pas",2);
+INSERT INTO users (login, password,ranksID) VALUES("log", "pas",3);
+INSERT INTO users (login, password,ranksID) VALUES("log", "pas",4);
+INSERT INTO users (login, password,ranksID) VALUES("log", "pas",5);
+INSERT INTO users (login, password,ranksID) VALUES("log", "pas",6);
+INSERT INTO users (login, password,ranksID) VALUES("log", "pas",1);
+INSERT INTO users (login, password,ranksID) VALUES("log", "pas",3);
+INSERT INTO users (login, password,ranksID) VALUES("log", "pas",5);
+INSERT INTO users (login, password,ranksID) VALUES("log", "pas",6);
+INSERT INTO users (login, password,ranksID) VALUES("log", "pas",7);

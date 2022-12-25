@@ -16,7 +16,7 @@ class Accounting(BaseModelModify):
     deleted: bool = False
 class Share(BaseModelModify):
     accountingID: int
-    memberId: int
+    memberID: int
     part: int
     deleted: bool = False
 class Ranks(BaseModelModify):
@@ -25,7 +25,7 @@ class Ranks(BaseModelModify):
 class Gang_members(BaseModelModify):
     name: str
     surname: str
-    rankID: int
+    ranksID: int
     deleted: bool = False
 
 class Territory(BaseModelModify):
@@ -35,6 +35,7 @@ class Gangs(BaseModelModify):
     gangs_title: str
     district: int
     
-class users(BaseModelModify):
+class Users(BaseModelModify):
     login: str
     password: str
+    ranksID: int
