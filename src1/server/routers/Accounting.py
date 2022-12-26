@@ -1,6 +1,6 @@
 import fastapi
-from base.models import Accounting
-from resolvers.Accounting import create_accounting, get_accounting, get_all_accountings, update_accounting, delete_accounting
+from server.base.models import Accounting
+from server.resolvers.Accounting import create_accounting, get_accounting, get_all_accountings, update_accounting, delete_accounting
 
 accounting_router = fastapi.APIRouter(prefix="/accounting",tags=["Accounting"])
 

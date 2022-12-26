@@ -1,5 +1,5 @@
-from base.base_gangs import base_worker
-from base.models import Share
+from server.base.base_gangs import base_worker
+from server.base.models import Share
 
 
 def create_share(share: Share):

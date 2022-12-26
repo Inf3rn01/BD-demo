@@ -1,6 +1,6 @@
 import fastapi
-from base.models import Event
-from resolvers.Event import create_event, get_event, get_all_events, update_event, delete_event
+from server.base.models import Event
+from server.resolvers.Event import create_event, get_event, get_all_events, update_event, delete_event
 
 event_router = fastapi.APIRouter(prefix="/event", tags=["Event"])
 

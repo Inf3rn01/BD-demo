@@ -1,6 +1,6 @@
 import fastapi
-from base.models import Users
-from resolvers.Users import create_user, get_user, get_all_users, update_user, delete_user
+from server.base.models import Users
+from server.resolvers.Users import create_user, get_user, get_all_users, update_user, delete_user
 
 user_router = fastapi.APIRouter(prefix="/users", tags=["Users"])
 

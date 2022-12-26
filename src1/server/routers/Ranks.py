@@ -1,6 +1,6 @@
 import fastapi
-from base.models import Ranks
-from resolvers.Ranks import create_rank, get_rank, get_all_ranks, update_rank, delete_rank
+from server.base.models import Ranks
+from server.resolvers.Ranks import create_rank, get_rank, get_all_ranks, update_rank, delete_rank
 
 rank_router = fastapi.APIRouter(prefix="/ranks", tags=["Ranks"])
 

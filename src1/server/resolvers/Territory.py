@@ -1,5 +1,5 @@
-from base.base_gangs import base_worker
-from base.models import Territory
+from server.base.base_gangs import base_worker
+from server.base.models import Territory
 
 
 def create_territory(territory: Territory):

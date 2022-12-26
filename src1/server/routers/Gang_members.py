@@ -1,6 +1,6 @@
 import fastapi
-from base.models import Gang_members
-from resolvers.Gang_members import create_Gang_member, get_Gang_member, get_all_Gang_members, update_Gang_member, delete_Gang_member
+from server.base.models import Gang_members
+from server.resolvers.Gang_members import create_Gang_member, get_Gang_member, get_all_Gang_members, update_Gang_member, delete_Gang_member
 
 gang_members_router = fastapi.APIRouter(prefix="/gang_members",tags=["Gang_members"])
 

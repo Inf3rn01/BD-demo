@@ -1,5 +1,5 @@
-from base.base_gangs import base_worker
-from base.models import Users
+from server.base.base_gangs import base_worker
+from server.base.models import Users
 
 
 def create_user(users: Users):

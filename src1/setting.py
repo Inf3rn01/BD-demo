@@ -1,1 +1,1 @@
-BASE_PATH = "base/base.db"
+BASE_PATH = "server/base/base.db"

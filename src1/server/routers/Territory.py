@@ -1,6 +1,6 @@
 import fastapi
-from base.models import Territory
-from resolvers.Territory import create_territory, get_territory, get_all_territories, update_territory, delete_territory
+from server.base.models import Territory
+from server.resolvers.Territory import create_territory, get_territory, get_all_territories, update_territory, delete_territory
 
 territory_router = fastapi.APIRouter(prefix="/territory", tags=["Territory"])
 

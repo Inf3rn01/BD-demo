@@ -1,10 +1,9 @@
-from base.base_gangs import base_worker
-from router import routers
+from server.base.base_gangs import base_worker
+from server.router import routers
 import fastapi
 
-base_worker.check_base():
-    base_worker.create_base('../base/banda.sql')
-    base_worker.create_base('../base/fill.sql')
+base_worker.create_base('../sql1/banda.sql')
+
 
 app = fastapi.APIRouter()
 

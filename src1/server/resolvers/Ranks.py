@@ -1,5 +1,5 @@
-from base.base_gangs import base_worker
-from base.models import Ranks
+from server.base.base_gangs import base_worker
+from server.base.models import Ranks
 
 
 def create_rank(rank: Ranks):

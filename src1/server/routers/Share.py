@@ -1,6 +1,6 @@
 import fastapi
-from base.models import Share
-from resolvers.Share import create_share, get_share, get_all_shares, update_share, delete_share
+from server.base.models import Share
+from server.resolvers.Share import create_share, get_share, get_all_shares, update_share, delete_share
 
 share_router = fastapi.APIRouter(prefix="/share",tags=["Share"])
 

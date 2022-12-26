@@ -1,5 +1,5 @@
-from base.base_gangs import base_worker
-from base.models import Gangs
+from server.base.base_gangs import base_worker
+from server.base.models import Gangs
 
 
 def create_Gang(gang: Gangs):

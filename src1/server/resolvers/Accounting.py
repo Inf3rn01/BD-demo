@@ -1,5 +1,5 @@
-from base.base_gangs import base_worker
-from base.models import Accounting
+from server.base.base_gangs import base_worker
+from server.base.models import Accounting
 
 
 def create_accounting(accounting: Accounting):
