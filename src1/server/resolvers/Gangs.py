@@ -4,7 +4,7 @@ from server.base.models import Gangs
 
 def create_Gang(gang: Gangs):
     return base_worker.execute(query="INSERT INTO Gangs(gangs_title, district) VALUES (?, ?) RETURNING id",
-                               args=(gang.gangs_title,gang.district,))
+                               args=(gang.gangs_title, gang.district,))
 
 
 def get_Gang(gang_id: int):

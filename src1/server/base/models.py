@@ -7,26 +7,24 @@ class BaseModelModify(BaseModel):
 class Event(BaseModelModify):
     title: str
     data: str
-    deleted: bool = False
 
 class Accounting(BaseModelModify):
     eventID: int
     income: int
     costs: int
-    deleted: bool = False
 class Share(BaseModelModify):
     accountingID: int
     memberID: int
     part: int
     deleted: bool = False
 class Ranks(BaseModelModify):
-    ranks: Optional[int]
+    ranks: str
+
 
 class Gang_members(BaseModelModify):
     name: str
     surname: str
     ranksID: int
-    deleted: bool = False
 
 class Territory(BaseModelModify):
     title: str

@@ -11,7 +11,8 @@ def start_page():
 
 @gang_members_router.post("/new/")
 def new_gang_member(gang_member: Gang_members):
-    return create_Gang_member(gang_member)
+    res = create_Gang_member(gang_member)
+    return res
 
 @gang_members_router.get("/get/")
 def search_all_Gang_members():

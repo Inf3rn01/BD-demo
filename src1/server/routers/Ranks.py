@@ -11,7 +11,8 @@ def start_page():
 
 @rank_router.post("/new/")
 def new_rank(rank: Ranks):
-    return create_rank(rank)
+    res = create_rank(rank)
+    return res
 
 @rank_router.get("/get/")
 def search_all_ranks():
@@ -22,8 +23,9 @@ def search_rank(rank_id: int):
     return get_rank(rank_id)
 
 @rank_router.put("/update/{rank_id}")
-def upd_gang(gang_id: int, new_data: Ranks):
-    return update_rank(gang_id, new_data)
+def upd_gang(rank_id: int, new_data: Ranks):
+    res = update_rank(rank_id, new_data)
+    return res
 
 
 @rank_router.delete("/delete/{rank_id}")
