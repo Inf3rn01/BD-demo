@@ -18,7 +18,7 @@ def search_all_Gang_members():
     return get_all_Gang_members()
 
 @gang_members_router.get("/get/{gang_member_id}")
-def search_gang_member(gang_member_id: id):
+def search_gang_member(gang_member_id: int):
     return get_Gang_member(gang_member_id)
 
 @gang_members_router.put("/update/{gang_member_id}")

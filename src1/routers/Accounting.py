@@ -18,7 +18,7 @@ def search_all_accountings():
     return get_all_accountings()
 
 @accounting_router.get("/get/{accounting_id}")
-def search_accounting(accounting_id: id):
+def search_accounting(accounting_id: int):
     return get_accounting(accounting_id)
 
 @accounting_router.put("/update/{accounting_id}")

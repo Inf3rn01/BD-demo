@@ -18,7 +18,7 @@ def search_all_share():
     return get_all_shares()
 
 @share_router.get("/get/{share_id}")
-def search_share(share_id: id):
+def search_share(share_id: int):
     return get_share(share_id)
 
 @share_router.put("/update/{share_id}")

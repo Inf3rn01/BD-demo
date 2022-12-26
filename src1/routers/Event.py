@@ -1,8 +1,8 @@
 import fastapi
 from base.models import Event
-from resolvers.Accounting import create_event, get_event, get_all_events, update_event, delete_event
+from resolvers.Event import create_event, get_event, get_all_events, update_event, delete_event
 
-event_router = fastapi.APIRouter(prefix="/event",tags=["Event"])
+event_router = fastapi.APIRouter(prefix="/event", tags=["Event"])
 
 
 @event_router.get("/")
@@ -18,7 +18,7 @@ def search_all_events():
     return get_all_events()
 
 @event_router.get("/get/{event_id}")
-def search_event(event_id: id):
+def search_event(event_id: int):
     return get_event(event_id)
 
 @event_router.put("/update/{event_id}")

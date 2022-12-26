@@ -1,31 +1,31 @@
 import fastapi
 from base.models import Territory
-from resolvers.Territory import create_territory, get_territory, get_all_shares, update_share, delete_share
+from resolvers.Territory import create_territory, get_territory, get_all_territories, update_territory, delete_territory
 
-share_router = fastapi.APIRouter(prefix="/share",tags=["Share"])
+territory_router = fastapi.APIRouter(prefix="/territory", tags=["Territory"])
 
 
-@share_router.get("/")
+@territory_router.get("/")
 def start_page():
     return""
 
-@share_router.post("/new/")
-def new_share(share: Share):
-    return create_share(share)
+@territory_router.post("/new/")
+def new_territory(territory: Territory):
+    return create_territory(territory)
 
-@share_router.get("/get/")
-def search_all_share():
-    return get_all_shares()
+@territory_router.get("/get/")
+def search_all_territories():
+    return get_all_territories()
 
-@share_router.get("/get/{share_id}")
-def search_share(share_id: id):
-    return get_share(share_id)
+@territory_router.get("/get/{territory_id}")
+def search_territory(territory_id: int):
+    return get_territory(territory_id)
 
-@share_router.put("/update/{share_id}")
-def upd_share(share_id: int, new_data: Share):
-    return update_share(share_id, new_data)
+@territory_router.put("/update/{territory_id}")
+def upd_territory(territory_id: int, new_data: Territory):
+    return update_territory(territory_id, new_data)
 
 
-@share_router.delete("/delete/{share_id}")
-def del_share(share_id: int):
-    return delete_share(share_id)
+@territory_router.delete("/delete/{territory_id}")
+def del_territory(territory_id: int):
+    return delete_territory(territory_id)
